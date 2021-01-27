@@ -45,13 +45,3 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
-
-
-class NewModel(models.Model):
-    "Generated Model"
-    first_field = models.BigIntegerField()
-    one_to_one = models.OneToOneField(
-        "home.CustomText",
-        on_delete=models.CASCADE,
-        related_name="newmodel_one_to_one",
-    )
