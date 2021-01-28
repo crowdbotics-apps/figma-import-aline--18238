@@ -41,6 +41,10 @@ class HomePage(models.Model):
         null=True,
         blank=True,
     )
+    field3 = models.BooleanField(
+        null=True,
+        blank=True,
+    )
 
     @property
     def api(self):
