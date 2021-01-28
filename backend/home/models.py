@@ -37,6 +37,10 @@ class HomePage(models.Model):
     """
 
     body = models.TextField()
+    field2 = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
 
     @property
     def api(self):
